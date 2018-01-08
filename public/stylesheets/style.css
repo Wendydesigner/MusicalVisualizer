@@ -1,0 +1,106 @@
+html{
+  height: 100%;
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+header,
+.left{
+  position: relative;
+}
+
+header{
+  margin: 10px 10px 10px 10px;
+  height: 20%;
+  width: 98%;
+}
+#type{
+  margin: 10px 10px 10px 10px;
+  display: inline-block;
+  position: relative;
+  list-style: none;
+  height: 20px;
+}
+#type li.selected{
+  background-color: #fff;
+  color: #000;
+}
+#type li{
+  float: left;
+  width: 80px;
+  cursor: pointer;
+  border:1px solid #fff;
+}
+#type li:first-child{
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+#type li:last-child{
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+/* bar */
+input[type="range"]{
+  -webkit-appearance: none;
+  height: 8px;
+  background: #999;
+  border-radius: 10px;
+  outline: none;
+}
+input[type="range"]::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  height: 12px;
+  width: 12px;
+  background: #fff;
+  border-radius: 100%;
+}
+.left{
+  margin: 10px 10px 10px 10px;
+  float: right;
+  height: 70%;
+  width: 20%;
+  overflow: hidden;
+}
+.music-add{
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  border: solid 1px #fff;
+  background: #000;
+  cursor: pointer;
+  overflow: hidden;
+  margin-bottom: 10px;
+  color:#ffffff;
+}
+.upload{
+  display: none;
+}
+#list{
+  border: 1px solid #fff;
+  list-style: none;
+}
+#list li{
+  cursor: pointer;
+}
+#list li.selected{
+  color: aqua;
+}
+#canvas{
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  color: #000;
+  z-index: -1;
+}
